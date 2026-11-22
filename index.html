@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Page - It Works!</title>
+<style>
+  body{margin:0;font-family:system-ui,sans-serif;background:#08090c;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:20px}
+  .box{background:#1a1d24;border:1px solid #333;border-radius:20px;padding:30px;max-width:400px;width:100%}
+  h1{color:#4caf50;margin:0 0 10px}
+  p{color:#9ca3af}
+  button{background:#4caf50;color:#fff;border:0;padding:12px 20px;border-radius:10px;font-size:16px;cursor:pointer;margin-top:15px}
+</style>
+</head>
+<body>
+  <div class="box">
+    <h1>✅ It Works!</h1>
+    <p>If you dey see this page, your Kashmill deploy don fix.</p>
+    <p id="time"></p>
+    <button onclick="alert('Kashmill is working!')">Tap Me</button>
+  </div>
+<script>
+  document.getElementById('time').textContent = 'Loaded: ' + new Date().toLocaleString();
+</script>
+</body>
+</html>
