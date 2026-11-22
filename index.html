@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Test Page - It Works!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test Page 2 - Update Works</title>
 <style>
-  body{margin:0;font-family:system-ui,sans-serif;background:#08090c;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:20px}
-  .box{background:#1a1d24;border:1px solid #333;border-radius:20px;padding:30px;max-width:400px;width:100%}
-  h1{color:#4caf50;margin:0 0 10px}
-  p{color:#9ca3af}
-  button{background:#4caf50;color:#fff;border:0;padding:12px 20px;border-radius:10px;font-size:16px;cursor:pointer;margin-top:15px}
+body { font-family: sans-serif; text-align: center; padding: 40px 20px; background: #e8f5e9; margin: 0; }
+.box { background: white; max-width: 420px; margin: 0 auto; padding: 30px 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+h1 { color: #2e7d32; margin: 0; }
+p { color: #555; }
+button { background: #2e7d32; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-size: 16px; }
+#msg { margin-top: 15px; font-weight: bold; color: #2e7d32; }
 </style>
 </head>
 <body>
-  <div class="box">
-    <h1>✅ It Works!</h1>
-    <p>If you dey see this page, your Kashmill deploy don fix.</p>
-    <p id="time"></p>
-    <button onclick="alert('Kashmill is working!')">Tap Me</button>
-  </div>
-<script>
-  document.getElementById('time').textContent = 'Loaded: ' + new Date().toLocaleString();
-</script>
+<div class="box">
+<h1>✅ TEST PAGE 2</h1>
+<p>If you dey see this GREEN page, update don work!</p>
+<p>Old page na white/blue. New page na green.</p>
+<button onclick="document.getElementById('msg').innerText='Yes! Update dey work well well 🎉'">Tap Me To Confirm</button>
+<p id="msg"></p>
+<p style="font-size:12px; color:#999;">Updated: 22/11/2026 - Version 2</p>
+</div>
 </body>
 </html>
